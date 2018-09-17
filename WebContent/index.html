@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css" />
+<link rel="stylesheet" href="styles/styles.css" />
+<script src="libs/jquery-3.3.1.min.js"></script>
+<script src="libs/jquery-ui/jquery-ui.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div>
+				<a href="index.html"><span></span></a>
+				<div class="menu-items right">
+					<a href="mytrip.html">마이트립</a> <img
+						src="images/line_maintop_gray.png" /> <a href="register.html">회원가입</a>
+				</div>
+			</div>
+		</div>
+		<div id="body">
+			<div id="title-text" class="lg-text">어디로 떠나볼까요?</div>
+			<div id="title-sub-text" class="md-text">Where do you want to
+				go?</div>
+			<div id="search-panel">
+				<form id="form-search">
+					<div class="panel-block">
+						<label for="from">일정이 언제에요?</label>
+						<div>
+							<input type="text" id="from" readonly />
+						</div>
+					</div>
+					<div class="panel-block">
+						<label for="to">언제까지에요?</label>
+						<div>
+							<input type="text" id="to" readonly />
+						</div>
+					</div>
+					<div class="panel-block no-margin">
+						<button type="submit" class="btn-search">
+							<img src="images/icon_search_on.png" /> 검색
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- 목록 구현 영역 -->
+			<div id="list-bg">
+				<div id="list-panel"></div>
+			</div>
+		</div>
+		<div id="list-item-template" class="list-item">
+			<img class="list-item-image" />
+			<div class="list-item-desc">
+				<div class="list-item-name"></div>
+				<div class="list-item-city">
+					<img src="images/icon_list_location.png" />
+					<div class="list-item-city-name" />
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
