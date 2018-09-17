@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마이트립 어드바이저</title>
+<link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css" />
+<link rel="stylesheet" href="styles/styles.css" />
+
+<script src="lib/jquery-3.3.1.min.js"></script>
+<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+<script src="script/login.js"></script>
+</head>
+<body class="gray-bg">
+	<div id="container">
+		<div id="header" class="inverted">
+			<div>
+				<a href="index.html"><span></span></a>
+				<div class="menu-items right">
+					<a href="register.html">회원가입</a> <img
+						src="images/line_maintop_gray.png"> <a href="login.html">로그인</a>
+				</div>
+			</div>
+		</div>
+		<div id="body">
+			<div class="form-box login-box">
+				<div class="inner">
+					<div class="title">
+						<span class="blue">마이트립</span><span class="black">어드바이저</span>
+					</div>
+					<span class="sub-title"> 로그인 정보를 입력하세요 </span>
+					<form id="form-login">
+						<input id="id" type="text" name="id" placeholder="아이디(이메일)"
+							autofocus>
+						<div class="txt-warning"></div>
+						<input id="password" type="password" name="password"
+							placeholder="비밀번호">
+						<div class="txt-warning"></div>
+						<button type="submit">로그인</button>
+						<button id="btn-home" type="button">Home</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
