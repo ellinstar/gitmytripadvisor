@@ -1,7 +1,5 @@
 var map;
-var list = [1, 2, 3, 4, 5];
-document.cookie = 'list='+JSON.stringify(list);
-Cookies.set('list', list);
+
 
 $(function() {
 	var id = parseId(window.location.search);
@@ -28,6 +26,22 @@ function getDetail(id) {
 		Galleria.run('#detail-images');
 		
 		showMarker(r.position.x, r.position.y);
+		
+		$('.btn-register').click(function(){
+			var myTrips = Cookies.getJSON('MYTRIPS');
+			if (!myTrips){
+				myTrips = [];
+			}
+			myTrips.push({
+				id: id,
+				name: r.name,
+				cityName: r.cityName,
+				x:r.position.x,
+				y:r.position.y
+			});
+			Cookies.set('MYTRIPS', myTrips);
+			alert('여행지가 등록되었습니다!');
+		});
 	});
 }
 
@@ -67,19 +81,5 @@ function showMarker(lat, lng){
 	});
 	map.panTo(pos);
 }
-$('.btn-register').click(function(){
-	var myTrips = Cookies.getJSON('MYTRIPS');
-	if (!myTrips){
-		myTrips = [];
-	}
-	myTrips.push({
-		id: id,
-		name: r.name,
-		cityName: r.cityName,
-		x:r.position.x,
-		y:r.position.y
-	});
-	Cookies.set('MYTRIPS', myTrips);
-	alert('여행지가 등록되었습니다!');
-});
+
 
