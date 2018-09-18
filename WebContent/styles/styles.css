@@ -508,3 +508,98 @@ button:hover {
 	font-size: 14px;
 	vertical-align: middle;
 }
+/* ȸ������ */
+.form-box .inner {
+	padding: 60px 70px;
+}
+
+#form-register {
+	font-size: 15px;
+}
+
+#inp-password {
+	margin-top: 26px;
+}
+
+.div-gender {
+	margin-top: 12px
+}
+
+.div-gender .txt-warning {
+	margin-top: 2px
+}
+
+#inp-female {
+	margin-left: 20px;
+}
+
+.div-birth {
+	margin-top: 17px;
+}
+
+.div-birth .txt-warning {
+	margin-top: 10px;
+}
+
+#inp-accept {
+	margin-top: 30px;
+}
+
+#btn-submit {
+	margin-top: 50px;
+}
+
+.overflow {
+	height: 200px;
+}
+
+#btn-back {
+	background-color: #A4AAB2;
+}
+
+.ui-slelctmenu-text {
+	color: #505050;
+	font-weight: 400;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+	color: #000;
+}
+
+#sel-birth-button {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.div-accept .txt-warning {
+	margin-top: 27px;
+}
+
+.txt-warning{
+	display: none;
+	font-size: 13px;
+	color: red;
+	margin-top: -5px;
+}
+
+
+/* �α��� */
+#btn-home {
+	background-color: #A4AAB2;
+}
+
+.form-box.login-box input[type="text"], .form-box.login-box input[type="password"],
+	.form-box.login-box button {
+	width: 470px;
+	height: 55px;
+}
+
+.login-box {
+	width: 610px;
+	height: 490px;
+	background-color: #fff;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+	margin: 150px auto 150px;
+}
+
+/*---------------------------------------�º�--------------------------------------------------------*/
