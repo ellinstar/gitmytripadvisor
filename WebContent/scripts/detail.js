@@ -1,4 +1,7 @@
 var map;
+var list = [1, 2, 3, 4, 5];
+document.cookie = 'list='+JSON.stringify(list);
+Cookie.set('list', list);
 
 $(function() {
 	var id = parseId(window.location.search);
@@ -64,7 +67,6 @@ function showMarker(lat, lng){
 	});
 	map.panTo(pos);
 }
-
 $('.btn-register').click(function(){
 	var myTrips = Cookies.getJSON('MYTRIPS');
 	if (!myTrips){
@@ -73,10 +75,11 @@ $('.btn-register').click(function(){
 	myTrips.push({
 		id: id,
 		name: r.name,
-		cityName: rcityName,
+		cityName: r.cityName,
 		x:r.position.x,
 		y:r.position.y
 	});
 	Cookies.set('MYTRIPS', myTrips);
 	alert('여행지가 등록되었습니다!');
 });
+
