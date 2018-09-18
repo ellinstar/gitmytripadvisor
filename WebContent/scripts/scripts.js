@@ -11,16 +11,20 @@ $(function() {
 	$(window).trigger('scroll');
 	var dpFrom = $('#from').datepicker({
 		dateFormat:'yy-mm-dd',
-		minDate: 0
+		minDate: 0,
+		onSelect: function() {
+			dpTo.datepicker('option', 'minDate', dpFrom.datepicker('getDate'));
+		}
 	});
+	
 	dpFrom.datepicker('setDate', new Date());
 	
 	var dpTo = $('#to').datepicker({
 		dateFormat: 'yy-mm-dd',
 		minDate: 0,
-		onselect: function(){
+		/*onSelect: function() {
 			dpTo.datepicker('option', 'minDate', dpFrom.datepicker('getDate'));
-		}
+		}*/
 	});
 	dpTo.datepicker('setDate', 4);
 	
