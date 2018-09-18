@@ -1,7 +1,7 @@
 var map;
 var list = [1, 2, 3, 4, 5];
 document.cookie = 'list='+JSON.stringify(list);
-Cookie.set('list', list);
+Cookies.set('list', list);
 
 $(function() {
 	var id = parseId(window.location.search);
